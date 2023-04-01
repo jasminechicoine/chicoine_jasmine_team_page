@@ -9,22 +9,49 @@
 
 .hidden { display: none; }
 
-html, body { height: 100% }
+html, body {  }
 
-body { 
-
+.container {
+    background-image: url('../images/mountains.png'); 
+    background-repeat: no-repeat;
 }
 
-/* main header rules */
+/* grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(19, 87px);
+    grid-column-gap: 10px;
+    padding-left: 43px;
+    padding-right: 43px;
+}
 
 
 /* main rules here */
-#members_nav {
-   
+#main-text {
+    font-family: "orpheuspro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    width:800px;
+    color: white;
+    padding-left: 50px;
+    padding-top: 50px;
+  
 }
 
-.members { list-style-type: none; }
+.members { list-style-type: none; 
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 150px;
+    padding-bottom: 100px;
 
+}
+
+#learn-more {
+    grid-column: 8/8;
+    margin-top:60px
+}
 
 
 /* lightbox rules here */
@@ -34,10 +61,20 @@ body {
     height: 100vh; /* vh = viewport height => screen height */
 
     position: absolute;
-    top: 0;
-    left: 0;
 
-    background-color: rgba(0, 0, 0, 0.85);
+    top: 0;
+    
+    color: white;
+    font-family: "orpheuspro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: black;
+    
+
+
+
+    background-color: rgba(255, 255, 255, 0.85);
     background-image: url('');
     background-repeat: no-repeat;
 
@@ -57,22 +94,29 @@ body {
     left: 95%;
 
     color: white;
-    font-size: 3em;
+    font-family: "orpheuspro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: black;
 
     text-decoration: none;
 
-    font-weight: bolder;
+   
 }
 
-.lightbox_close:hover { opacity: 0.5; color: red; }
+.lightbox_close:hover { opacity: 0.5; color: rgb(139, 209, 255); }
 
 .lightbox article {
     width: 55%;
-    margin-left: 40%;
-    padding-top: 50px;
+    margin-left: 20%;
+    padding-top: 60px;
 }
 
-.lb_text, .lb_heading { text-align:; }
+.lb_heading {
+    padding-bottom: 30px;
+    font-size: 100px;
+}
 
 .lb_text {
     line-height: 1.6 !important;
