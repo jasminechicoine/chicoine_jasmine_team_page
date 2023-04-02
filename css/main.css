@@ -9,11 +9,12 @@
 
 .hidden { display: none; }
 
-html, body {  }
 
 .container {
     background-image: url('../images/mountains.png'); 
     background-repeat: no-repeat;
+    max-width: 1920px;
+
 }
 
 /* grid */
@@ -78,7 +79,7 @@ html, body {  }
     background-image: url('');
     background-repeat: no-repeat;
 
-    background-size: 55vh; /* 55% of the viewport height */
+    background-size: 55vh; 
     background-position: 40px bottom;
 
     z-index: 5000;
@@ -86,7 +87,6 @@ html, body {  }
     display: none;
 }
 
-#lightbox2 { background-image: url(''); }
 
 .lightbox_close {
     position: relative;
@@ -124,5 +124,4 @@ html, body {  }
     padding-top: 2em;
 }
 
-/* turn the lightbox on using the :target pseudo selector */
 .lightbox:target { display: block; }
